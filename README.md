@@ -17,11 +17,7 @@ same time?
 print “hello”; the parent process should print “goodbye”. You should
 try to ensure that the child process always prints first; can you do
 this without calling wait() in the parent?
-  4. Write a program that calls fork() and then calls some form of
-exec() to run the program /bin/ls. See if you can try all of the
-variants of exec(), including (on Linux) execl(), execle(),
-execlp(), execv(), execvp(), and execvpe(). Why do
-you think there are so many variants of the same basic call?
+
   5. Now write a program that uses wait() to wait for the child process
 to finish in the parent. What does wait() return? What happens if
 you use wait() in the child?

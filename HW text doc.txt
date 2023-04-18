@@ -22,4 +22,4 @@ it returns a negetive 1 as its return value
 When mutiple child programs exisit
 
 7) What happens if the child calls printf() to print some output after closing the descriptor?
-the child has no output.
+the child has no output. 
