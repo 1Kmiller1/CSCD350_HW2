@@ -1,0 +1,25 @@
+1) What value is the variable in the child process?
+The value is the same in both the parent and child
+
+What happens to the variable when both the child and parent change the value of x?
+They both change the value and print there version of the varable
+
+2) Can both the childand parent access the file descriptor returned by open()? 
+Yes
+
+What happens when they are writing to the file concurrently, i.e., at the same time?
+they both add to seprate lines of the file
+
+3)can you do this without calling wait() in the parent?
+Yes but its better to use wait
+
+5)What does wait() return?
+ an int
+What happens if you use wait() in the child?
+it returns a negetive 1 as its return value
+
+6) When would waitpid() be useful?
+When mutiple child programs exisit
+
+7) What happens if the child calls printf() to print some output after closing the descriptor?
+the child has no output.
